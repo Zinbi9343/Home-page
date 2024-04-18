@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dark Neon Homepage</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1e1e1e);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .sidebar-nav {
+            text-align: left;
+            margin-top: 30px;
+        }
+        .sidebar-nav a {
+            display: block;
+            margin-bottom: 10px;
+            color: #66ff00;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        .sidebar-nav a:hover {
+            color: #fff;
+        }
+        .main-content {
+            flex: 2;
+            text-align: center;
+        }
+        .google-logo {
+            width: 300px;
+            margin: 20px auto;
+        }
+        .search-bar {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .search-bar::placeholder {
+            color: #ccc;
+        }
+        .search-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .search-button:hover {
+            background-color: #45a049;
+        }
+        .important-sites {
+            margin-top: 50px;
+        }
+        .important-sites a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #66ff00;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .important-sites a:hover {
+            background-color: #555;
+        }
+        .iframe-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            color: #FFFFFF;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="dp.jpg" alt="Profile Picture">
+                <p>Hello,User.</p>
+            </div>
+            <div class="sidebar-nav">
+                <a href="index2.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="chrome://settings/">Settings</a>
+                <a href="index.html">Login</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <img class="google-logo" src="logo.png" alt="Google Logo">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input class="search-bar" type="text" name="q" placeholder="Search...">
+                <button class="search-button" type="submit">Search</button>
+                <input type="hidden" name="hl" value="en"> <!-- Language setting -->
+                <input type="hidden" name="gws_rd" value="ssl"> <!-- Google Web Server setting -->
+            </form>
+            <div class="important-sites">
+                <a href="https://samagra.gov.in">Samagra Portal</a>
+                <a href="http://mpbse.nic.in/">MPBSE</a>
+                <a href="https://github.com/">GitHub</a>
+                <!-- Add more important sites as needed -->
+            </div>
+            <div class="iframe-container">
+                <iframe src="quote.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
